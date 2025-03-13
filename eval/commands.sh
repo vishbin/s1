@@ -3,6 +3,7 @@
 ### Testing ###
 
 # Testing
+$lm_eval --model dummy --tasks aime24_figures,aime24_nofigures,openai_math,gpqa_diamond_openai --batch_size auto --output_path dummy --log_samples --gen_kwargs "max_gen_toks=32768"
 lm_eval --model dummy --tasks aime24_figures,aime24_nofigures,openai_math,gpqa_diamond_openai --batch_size auto --output_path dummy --log_samples --gen_kwargs "max_gen_toks=32768"
 
 # You may have to add `VLLM_WORKER_MULTIPROC_METHOD=spawn` in front of every command if you run into vLLM issues
